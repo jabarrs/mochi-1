@@ -155,9 +155,9 @@ export default {
                 this.errorObj.passErr.push('Password is required');
             }
             else {
-                if (!/[!@#$%^&*]/.test(this.registerObj.pass)) {
-                    this.errorObj.passErr.push('Password must contain at least 1 special character');
-                }
+                // if (!/[!@#$%^&*]/.test(this.registerObj.pass)) {
+                //     this.errorObj.passErr.push('Password must contain at least 1 special character');
+                // }
 
                 if (this.registerObj.pass.length < 8) {
                     this.errorObj.passErr.push('Password must be more than or equal 8 characters');
@@ -180,9 +180,9 @@ export default {
                 this.errorObj.phoneErr.push('Entering phone number is required');
             }
             else {
-                if (!this.registerObj.phone.startsWith('+62')) {
-                    this.errorObj.phoneErr.push('Phone numbers must start with +62');
-                }
+                // if (!this.registerObj.phone.startsWith('+62')) {
+                //     this.errorObj.phoneErr.push('Phone numbers must start with +62');
+                // }
 
                 if (this.registerObj.phone.length != 14) {
                     this.errorObj.phoneErr.push('Phone numbers must have exactly 14 digits');

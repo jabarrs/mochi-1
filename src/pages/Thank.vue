@@ -2,7 +2,7 @@
     <div class="thank-container">
         <h1>
             <p>
-                <span>t</span>
+                <span>T</span>
                 <span>h</span>
                 <span>a</span>
                 <span>n</span>
@@ -10,7 +10,7 @@
             </p>
 
             <p>
-                <span>y</span>
+                <span>Y</span>
                 <span>o</span>
                 <span>u</span>
             </p>
