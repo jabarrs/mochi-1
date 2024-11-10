@@ -38,13 +38,13 @@
 
             <router-link @click="scrollToTop()" to="/menu" class="box">
                 <img src="../assets/images/dessert-11.png" alt="">
-                <h3>dessert</h3>
+                <h3>Mochi</h3>
             </router-link>
 
-            <router-link @click="scrollToTop()" to="/menu" class="box">
+            <!-- <router-link @click="scrollToTop()" to="/menu" class="box">
                 <img src="../assets/images/coca-img.png" alt="">
                 <h3>drink</h3>
-            </router-link>
+            </router-link> -->
         </div>
 
         <div class="home-banner">
