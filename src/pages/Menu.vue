@@ -119,7 +119,7 @@
                     <h1>Type</h1>
                 </div>
 
-                <div class="row filter-section">
+                <!-- <div class="row filter-section">
                     <ul class="filter-option">
                         <li>
                             <input type="button" name="rType" id="mType" value="meat" hidden
@@ -136,7 +136,7 @@
                         </li>
 
                     </ul>
-                </div>
+                </div> -->
             </div>
 
             <div class="col-sm-8">
