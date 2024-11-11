@@ -77,7 +77,7 @@
                 </div>
                 <div class="input-box">
                     <iframe class="map"
-                        src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d63460.26590251717!2d106.77741400131471!3d-6.2285374523736285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d-6.1997056!2d106.7843584!4m5!1s0x2e69f3b2b4b032bd%3A0x80cdcb3e05d8f461!2sstmik%20ids!3m2!1d-6.2572259!2d106.85208259999999!5e0!3m2!1sid!2sid!4v1731289184110!5m2!1sid!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d63460.26590251717!2d106.77741400131471!3d-6.2285374523736285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e9!4m3!3m2!1d-6.1997056!2d106.7843584!4m5!1s0x2e69f3b2b4b032bd%3A0x80cdcb3e05d8f461!2sstmik%20ids!3m2!1d-6.2572259!2d106.85208259999999!5e0!3m2!1sid!2sid!4v1731289631824!5m2!1sid!2sid"
                         loading="lazy"></iframe>
                 </div>
             </div>
