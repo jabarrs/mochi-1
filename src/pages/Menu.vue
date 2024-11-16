@@ -172,8 +172,7 @@
                                     <div v-for="s in Math.floor(parseFloat(f.food_star))" :key="s" class="d-inline">
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <div v-if="parseFloat(f.food_star) - Math.floor(parseFloat(f.food_star)) == 0.5"
-                                        class="d-inline">
+                                    <div v-if="parseFloat(f.food_star) - Math.floor(parseFloat(f.food_star)) == 0.5" class="d-inline">
                                         <i class="fas fa-star-half-alt"></i>
                                     </div>
                                     <span> ({{ f.food_vote }}) </span>
@@ -182,9 +181,8 @@
                                     <p>{{ f.food_desc }}</p>
                                 </div>
                                 <div class="price">
-                                    Rp.{{ parseFloat(f.food_price) - parseFloat(f.food_discount) }}
-                                    <span v-if="parseFloat(f.food_discount) != 0.00">Rp.{{ parseFloat(f.food_price)
-                                    }}</span>
+                                    Rp.{{ formatRupiah(parseFloat(f.food_price) - parseFloat(f.food_discount)) }}
+                                    <span v-if="parseFloat(f.food_discount) != 0.00">Rp.{{ formatRupiah(parseFloat(f.food_price)) }}</span>
                                 </div>
                                 <button class="btn" @click="addItem(index)">Add to cart</button>
                             </div>
@@ -274,6 +272,10 @@ export default {
         previous() {
             this.pageNum--;
         },
+        formatRupiah(value) {
+        if (!value) return '0';
+        return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+    },
         checkSale: function (food, statusArray) {
             if (statusArray.includes("Sale Off")) {
                 if (parseFloat(food.food_discount) > 0) {
