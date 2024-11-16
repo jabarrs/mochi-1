@@ -51,13 +51,13 @@
                                         </div>
 
                                         <div class="item-price col-sm-1">
-                                            <span class="sale-price">Rp.{{ parseFloat(f.food_price) -
+                                            <span class="sale-price">Rp.{{ formatRupiah(f.food_price) -
                                                     parseFloat(f.food_discount)
                                             }}</span>
                                             <p class="text-muted first-price"
                                                 v-if="parseFloat(f.food_discount) != 0.00">
                                                 Rp.{{
-                                                        parseFloat(f.food_price)
+                                                        formatRupiah(f.food_price)
                                                 }}
 
                                             </p>
@@ -181,7 +181,10 @@ export default {
             });
             return temp
         },
-
+        formatRupiah(value) {
+        if (!value) return '0';
+        return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+    },
         calculateItemPrice: function (index) {
             return ((parseInt(this.filterFoods[index].food_price) - parseInt(this.filterFoods[index].food_discount)) * this.itemQuantity[index]).toString()
         },
