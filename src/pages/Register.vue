@@ -184,9 +184,9 @@ export default {
                 //     this.errorObj.phoneErr.push('Phone numbers must start with +62');
                 // }
 
-                if (this.registerObj.phone.length != 14) {
-                    this.errorObj.phoneErr.push('Phone numbers must have exactly 14 digits');
-                }
+                // if (this.registerObj.phone.length != 14) {
+                //     this.errorObj.phoneErr.push('Phone numbers must have exactly 14 digits');
+                // }
 
                 if (!/[0-9]{11,12}/.test(this.registerObj.phone)) {
                     this.errorObj.phoneErr.push('Phone numbers can only contain numbers');
