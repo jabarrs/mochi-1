@@ -52,10 +52,10 @@
 
                                         <div class="item-price col-sm-1">
                                             <span class="sale-price">Rp.{{ formatRupiah(f.food_price) -
-                                                    parseFloat(f.food_discount)
+                                                    formatRupiah(f.food_discount)
                                             }}</span>
                                             <p class="text-muted first-price"
-                                                v-if="parseFloat(f.food_discount) != 0.00">
+                                                v-if="formatRupiah(f.food_discount) != 0.00">
                                                 Rp.{{
                                                         formatRupiah(f.food_price)
                                                 }}
